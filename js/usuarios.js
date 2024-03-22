@@ -132,7 +132,7 @@ function obtenerYRenderizarRolesParaEditar() {
   fetch('https://steady-hammerhead-fibre.glitch.me/api/users/curso-js-rol/roles')
     .then(response => response.json())
     .then(data => {
-      const rolSelector = document.getElementById('editRol');
+      const rolSelector = document.getElementById('rol');
       if (rolSelector) {
         rolSelector.innerHTML = '';
         data.forEach(rol => {
