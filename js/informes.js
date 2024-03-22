@@ -44,3 +44,11 @@ if (descargarInformes) {
     downloadAnchorNode.remove();
   });
 }
+
+var borrarStorage = document.getElementById('borrarStorage');
+if (borrarStorage) {
+  borrarStorage.addEventListener('click', function () {
+    localStorage.clear();
+    location.reload();
+  });
+}

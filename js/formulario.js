@@ -88,13 +88,6 @@ window.onload = async function () {
     });
   }
 
-  var borrarStorage = document.getElementById('borrarStorage');
-  if (borrarStorage) {
-    borrarStorage.addEventListener('click', function () {
-      localStorage.clear();
-      location.reload();
-    });
-  }
 };
 
 document.addEventListener('DOMContentLoaded', (event) => {
