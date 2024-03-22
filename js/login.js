@@ -23,7 +23,7 @@ function login(username, password) {
           timerProgressBar: true,
         }).then((result) => {
           if (result.dismiss === Swal.DismissReason.timer) {
-            window.location.href = '../html/informes.html';
+            window.location.href = '/Gestor_de_informes-CoderHouse/html/informes.html';
           }
         });
       }
