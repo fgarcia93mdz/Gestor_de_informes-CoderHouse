@@ -1,0 +1,340 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+#indexBody{
+background-image: linear-gradient(to right, #87c7ef, #8bccf5, rgb(189, 222, 243), #c7e5f6, #dfeff7) !important;
+}
+
+#h1Index {
+  color: #000000;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+h2 {
+  color: #666;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+}
+
+#formInforme {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  border-color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#formInforme label {
+  font-weight: bold;
+}
+
+#formInforme .form-control,
+#formInforme .form-select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#formInforme .btn {
+  background-color: #5C6BC0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+#formInforme .btn:hover {
+  background-color: #3F51B5;
+}
+
+#contenedor-informes {
+  max-width: 500px;
+  margin: 50px auto 0;
+}
+
+#contenedor-informes .informe {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#contenedor-informes .informe h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#contenedor-informes .informe p {
+  margin: 5px 0;
+}
+
+#mensaje {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#mensaje.exito {
+  color: green;
+}
+
+#formInforme input[type="submit"] {
+  grid-column: span 2;
+  background-color: #5C6BC0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#formInforme input[type="submit"]:hover {
+  background-color: #3F51B5;
+}
+
+#informeModal .modal-dialog {
+  max-width: 800px; 
+}
+
+#informeModal .modal-header {
+  background-color: #5C6BC0; 
+  color: white; 
+}
+
+#informeModal .modal-body {
+  font-size: 1.2em; 
+}
+
+#informeModal .modal-footer {
+  justify-content: center; 
+}
+
+#informeModal .btn-secondary {
+  background-color: #5C6BC0; 
+  color: white; 
+}
+
+#informeModal .btn-secondary:hover {
+  background-color: #3F51B5; 
+}
+
+#informeModal .btn-primary {
+  background-color: #5C6BC0; 
+  color: white; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #5C6BC0;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+button {
+  background-color: #5C6BC0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #3F51B5;
+}
+
+.navbar {
+  background-color: #5C6BC0;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #f4f4f4;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.centrado {
+  margin-top: 5%;
+  margin-left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; 
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; 
+  max-height: 500px; 
+  overflow: auto; 
+}
+
+#login {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+
+#loginForm label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#loginForm input[type="submit"] {
+  background-color: #5C6BC0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#loginForm input[type="submit"]:hover {
+  background-color: #3F51B5;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+    border-color: #000000;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#thSector {
+  text-align: center;
+}
+
+#thUsuario{
+  text-align: center;
+
+}
+
+#thRol {
+  text-align: center;
+
+}
+
+#sectorTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+    border-color: #000000;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#rolTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-color: #000000;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#informesGenerados {
+  font-size: 20px; 
+  font-weight: bold; 
+  color: #5C6BC0; 
+  text-align: center; 
+  margin-top: 20px; 
+  padding: 10px; 
+  border: 2px solid #5C6BC0; 
+  border-radius: 5px; 
+  background-color: #f2f2f2; 
+  width: 50%;
+  margin-left: 25%;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: none;
+  color: #000;
+}

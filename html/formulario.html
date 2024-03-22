@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gestión de Informes de Seguridad - Formulario</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Trilenium casino</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../html/formulario.html">Formulario Informes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/informes.html">Informes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/usuarios.html">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/sectores.html">Sectores</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="../html/roles.html">Roles</a>
+      </ul>
+      <div class="navbar-text" id="saludo"></div>
+      <button id="logout" class="btn btn-outline-danger ml-3">Cerrar Sesión</button>
+    </div>
+  </nav>
+  <h1>Formulario de Informes</h1>
+  <form id="formInforme">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo">
+    <label for="fecha">Fecha:</label>
+    <input type="datetime-local" id="fecha" name="fecha">
+    <label for="sector">Sector:</label>
+    <select id="sector" name="sector"></select>
+    <label for="involucrado">Involucrado:</label>
+    <select id="involucrado" name="involucrado"></select>
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" name="autor" readonly>
+    <label for="informeContenido">Contenido del informe:</label>
+    <textarea id="informeContenido" name="informeContenido"></textarea>
+    <input type="submit" value="Agregar informe">
+  </form>
+  <div id="mensaje"></div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="../js/formulario.js"></script>
+<script type="module" src="../js/logOut.js"></script>
+
+</body>
+
+</html>

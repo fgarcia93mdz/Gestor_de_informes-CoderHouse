@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gestión de Informes de Seguridad - Formulario</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Trilenium casino</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../html/formulario.html">Formulario Informes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/informes.html">Informes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/usuarios.html">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/sectores.html">Sectores</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../html/roles.html">Roles</a>
+      </ul>
+      <div class="navbar-text" id="saludo"></div>
+      <button id="logout" class="btn btn-outline-danger ml-3">Cerrar Sesión</button>
+    </div>
+  </nav>
+  <h1>Formulario de creación de usuario </h1>
+  <form id="formInforme">
+    <label for="nombre" class="form-label">Nombre:</label>
+    <input type="text" class="form-control" id="nombre" required>
+    <label for="apellido" class="form-label">Apellido:</label>
+    <input type="text" class="form-control" id="apellido" required>
+    <label for="usuario" class="form-label">Usuario:</label>
+    <input type="text" class="form-control" id="usuario" required>
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" required>
+    <label for="password" class="form-label">Contraseña:</label>
+    <input type="password" class="form-control" id="password" required>
+    <label for="rol" class="form-label">Rol:</label>
+    <select class="form-select" id="rol" required></select>
+    <div class="d-flex justify-content-center">
+      <input type="submit" class="btn btn-primary mt-12" value="Crear usuario">
+    </div>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script type="module" src="../js/usuarios.js"></script>
+  <script type="module" src="../js/logOut.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gestión de Informes de Seguridad</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Trilenium casino</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../html/formulario.html">Formulario Informes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/informes.html">Informes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/usuarios.html">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/sectores.html">Sectores</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../html/roles.html">Roles</a>
+      </ul>
+      <div class="navbar-text" id="saludo"></div>
+      <button id="logout" class="btn btn-outline-danger ml-3">Cerrar Sesión</button>
+    </div>
+  </nav>
+
+  <h1>Listado de sectores</h1>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <form id="sectorForm"
+      style="border: 1px solid #000; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); padding: 20px; text-align: center;">
+      <label for="sector">Nombre del sector:</label>
+      <input type="text" id="sector" name="sector" required>
+      <button type="submit">Crear sector</button>
+    </form>
+  </div>
+  <table id="sectorTable" class="table">
+    <thead>
+      <tr>
+        <th id="thSector">Nombre del sector</th>
+        <th id="thSector">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <div class="modal" tabindex="-1" id="editModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Editar sector</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="editInput" class="form-control">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="saveButton">Guardar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script type="module" src="../js/sectores.js"></script>
+  <script type="module" src="../js/logOut.js"></script>
+
+</body>
+
+</html>
